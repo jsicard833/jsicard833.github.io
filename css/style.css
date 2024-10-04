@@ -1,40 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+h2 {
+    margin-top: 2rem;
+    font-weight: 700;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 2rem 0;
-    text-align: center;
+p {
+    margin-bottom: 1rem;
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #f8f9fa;
     padding: 1rem 0;
-    text-align: center;
 }
