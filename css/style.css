@@ -1,114 +1,114 @@
 /* General resets and styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    color: #2a4747; /* Dark teal for text */
+    background-color: #1A1A2E; /* Dark Navy */
+    color: #FFFFFF; /* White text */
 }
 
 h1, h2, h3 {
     font-weight: 700;
-    color: #2a4747; /* Use dark teal for headings */
+    color: #E94560; /* Coral for headings */
 }
 
 p, li {
     font-weight: 400;
-    color: #2a4747;
+    color: #FFFFFF; /* White text */
 }
 
 /* Navbar styling */
 .navbar {
-    background-color: #2a4747; /* Dark teal for the navbar */
+    background-color: #0F3460; /* Muted Dark Blue for navbar */
 }
 
 .navbar-brand {
-    color: #ffc857; /* Yellow for the logo or brand name */
+    color: #E94560; /* Coral for the logo or brand name */
     font-size: 1.75rem;
 }
 
 .navbar-nav .nav-link {
-    color: white;
+    color: #FFFFFF;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #f4a261; /* Orange for hover effect on navbar links */
+    color: #E94560; /* Coral hover effect for navbar links */
 }
 
 /* About Section */
 #about {
-    background-color: #b2ffd6; /* Mint green background for the about section */
-    color: #2a4747;
+    background-color: #16213E; /* Darker Navy background for about section */
+    color: #FFFFFF;
 }
 
 #about img {
     border-radius: 50%;
-    border: 4px solid #ce7b91; /* Soft pink border around profile picture */
+    border: 4px solid #E94560; /* Coral border around profile picture */
 }
 
 /* Skills Section */
 #skills {
-    background-color: #f4f4f9; /* Light background for contrast */
+    background-color: #1A1A2E; /* Dark Navy background */
 }
 
 #skills h2 {
-    color: #ce7b91; /* Soft pink for the section title */
+    color: #E94560; /* Coral for section title */
 }
 
 #skills .list-unstyled li {
-    color: #2a4747;
+    color: #FFFFFF;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #ffc857; /* Yellow for the projects section */
-    color: #2a4747;
+    background-color: #0F3460; /* Muted Dark Blue for projects section */
+    color: #FFFFFF;
 }
 
 .card {
-    background-color: #b2ffd6; /* Mint green background for project cards */
+    background-color: #53354A; /* Deep Plum background for project cards */
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-    color: #2a4747;
+    color: #E94560; /* Coral for card titles */
 }
 
 .card-text a {
-    color: #f4a261; /* Orange for project links */
+    color: #E94560; /* Coral for project links */
 }
 
 .card-text a:hover {
-    color: #ce7b91; /* Soft pink hover effect for project links */
+    color: #FFFFFF; /* White hover effect for project links */
 }
 
 /* Contact Section */
 #contact {
-    background-color: #ce7b91; /* Soft pink background for contact section */
-    color: white;
+    background-color: #16213E; /* Darker Navy for contact section */
+    color: #FFFFFF;
 }
 
 #contact a {
-    color: #ffc857; /* Yellow for links */
+    color: #E94560; /* Coral for contact links */
 }
 
 #contact a:hover {
-    color: #f4a261; /* Orange hover effect for contact links */
+    color: #FFFFFF; /* White hover effect */
 }
 
 /* Footer */
 footer {
-    background-color: #2a4747; /* Dark teal for the footer */
-    color: white;
+    background-color: #0F3460; /* Muted Dark Blue for the footer */
+    color: #FFFFFF;
 }
 
 /* Buttons and Links */
 .btn-primary {
-    background-color: #f4a261; /* Orange for primary buttons */
+    background-color: #E94560; /* Coral for buttons */
     border: none;
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #ce7b91; /* Soft pink for button hover */
+    background-color: #16213E; /* Darker navy for button hover */
 }
