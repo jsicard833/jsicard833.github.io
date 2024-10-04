@@ -1,23 +1,114 @@
+/* General resets and styles */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #2a4747; /* Dark teal for text */
 }
 
 h1, h2, h3 {
     font-weight: 700;
+    color: #2a4747; /* Use dark teal for headings */
 }
 
 p, li {
     font-weight: 400;
+    color: #2a4747;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #2a4747; /* Dark teal for the navbar */
 }
 
 .navbar-brand {
+    color: #ffc857; /* Yellow for the logo or brand name */
     font-size: 1.75rem;
 }
 
-footer {
-    margin-top: 3rem;
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4a261; /* Orange for hover effect on navbar links */
+}
+
+/* About Section */
+#about {
+    background-color: #b2ffd6; /* Mint green background for the about section */
+    color: #2a4747;
 }
 
 #about img {
     border-radius: 50%;
+    border: 4px solid #ce7b91; /* Soft pink border around profile picture */
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f4f4f9; /* Light background for contrast */
+}
+
+#skills h2 {
+    color: #ce7b91; /* Soft pink for the section title */
+}
+
+#skills .list-unstyled li {
+    color: #2a4747;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #ffc857; /* Yellow for the projects section */
+    color: #2a4747;
+}
+
+.card {
+    background-color: #b2ffd6; /* Mint green background for project cards */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #2a4747;
+}
+
+.card-text a {
+    color: #f4a261; /* Orange for project links */
+}
+
+.card-text a:hover {
+    color: #ce7b91; /* Soft pink hover effect for project links */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ce7b91; /* Soft pink background for contact section */
+    color: white;
+}
+
+#contact a {
+    color: #ffc857; /* Yellow for links */
+}
+
+#contact a:hover {
+    color: #f4a261; /* Orange hover effect for contact links */
+}
+
+/* Footer */
+footer {
+    background-color: #2a4747; /* Dark teal for the footer */
+    color: white;
+}
+
+/* Buttons and Links */
+.btn-primary {
+    background-color: #f4a261; /* Orange for primary buttons */
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ce7b91; /* Soft pink for button hover */
 }
