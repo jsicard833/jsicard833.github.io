@@ -1,17 +1,91 @@
-body {
+body, h1, h2, h3, p {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-    margin-top: 2rem;
-    font-weight: 700;
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
 }
 
-p {
-    margin-bottom: 1rem;
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-footer {
-    background-color: #f8f9fa;
-    padding: 1rem 0;
+header, footer {
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header, .main, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.project {
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
