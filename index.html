@@ -3,46 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Sicard's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Joshua Sicard Portfolio</title>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Joshua Sicard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main class="container mt-5">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I’m Joshua Sicard, a Computer Science student at the University of Michigan with a minor in Electrical Engineering. 
-                My passion for technology and problem-solving drives me to explore various aspects of software development. 
-                I’m constantly learning and building projects that allow me to apply these skills to real-world scenarios.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
-        </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Link to your resume or describe your experiences.</p>
-        </section>
-        <section id="contact">
+
+    <!-- About Section -->
+    <section id="about" class="container py-5 text-center">
+        <h2>About Me</h2>
+        <p class="lead">Hello! I'm Joshua, a Computer Science student at the University of Michigan. I'm passionate about software development and engineering.</p>
+        <img src="images/profile.jpg" alt="Joshua's profile picture" class="img-fluid rounded-circle my-3" width="150">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Programming Languages</h4>
+                    <ul class="list-unstyled">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Rust</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Technologies</h4>
+                    <ul class="list-unstyled">
+                        <li>HTML/CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Tools</h4>
+                    <ul class="list-unstyled">
+                        <li>VS Code</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 1</h3>
+                            <p class="card-text">Description of project 1. <a href="#">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 2</h3>
+                            <p class="card-text">Description of project 2. <a href="#">GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5 text-center">
+        <div class="container">
             <h2>Contact</h2>
-            <p>jsicard@umich.edu</p>
-        </section>
-    </main>
+            <p>You can reach me via <a href="mailto:jsicard@umich.edu">email</a> or find me on <a href="">LinkedIn</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Joshua Sicard</p>
+    </footer>
+
+    <!-- Bootstrap JS, jQuery, and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
