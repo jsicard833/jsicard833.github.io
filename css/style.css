@@ -1,114 +1,348 @@
 /* General resets and styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1A1A2E; /* Dark Navy */
-    color: #FFFFFF; /* White text */
+    background-color: #222831; /* Dark Charcoal */
+    color: #EEEEEE; /* Light Gray */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #FFFFFF; /* Light mode background */
+    color: #222831; /* Text color for light mode */
 }
 
 h1, h2, h3 {
     font-weight: 700;
-    color: #E94560; /* Coral for headings */
+    color: #00ADB5; /* Cyan for headings */
 }
 
 p, li {
     font-weight: 400;
-    color: #FFFFFF; /* White text */
+    color: #EEEEEE; /* Light Gray */
 }
 
 /* Navbar styling */
 .navbar {
-    background-color: #0F3460; /* Muted Dark Blue for navbar */
+    background-color: #393E46; /* Slate Gray for navbar */
 }
 
 .navbar-brand {
-    color: #E94560; /* Coral for the logo or brand name */
+    color: #00ADB5; /* Cyan for the logo or brand name */
     font-size: 1.75rem;
 }
 
+.navbar-brand:hover {
+    color: #00ADB5 !important; /* Cyan on hover with !important */
+}
+
 .navbar-nav .nav-link {
-    color: #FFFFFF;
+    color: #EEEEEE;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #E94560; /* Coral hover effect for navbar links */
+    color: #00ADB5; /* Cyan hover effect for navbar links */
 }
 
 /* About Section */
 #about {
-    background-color: #16213E; /* Darker Navy background for about section */
-    color: #FFFFFF;
+    background-color: #393E46; /* Slate Gray background for about section */
+    color: #EEEEEE;
 }
 
 #about img {
     border-radius: 50%;
-    border: 4px solid #E94560; /* Coral border around profile picture */
+    border: 4px solid #00ADB5; /* Cyan border around profile picture */
+}
+
+#about h2 {
+    color: #00ADB5; /* Cyan for section title */
 }
 
 /* Skills Section */
 #skills {
-    background-color: #1A1A2E; /* Dark Navy background */
+    background-color: #222831; /* Dark Charcoal background */
 }
 
 #skills h2 {
-    color: #E94560; /* Coral for section title */
+    color: #00ADB5; /* Cyan for section title */
 }
 
 #skills .list-unstyled li {
-    color: #FFFFFF;
+    color: #EEEEEE; /* Light Gray for text */
 }
 
 /* Projects Section */
 #projects {
-    background-color: #0F3460; /* Muted Dark Blue for projects section */
-    color: #FFFFFF;
+    background-color: #393E46; /* Slate Gray for projects section */
+    color: #EEEEEE;
+}
+
+#projects h2 {
+    color: #00ADB5; /* Cyan for section title */
+}
+
+#projects h3 {
+    color: #00ADB5; /* Cyan for project titles */
 }
 
 .card {
-    background-color: #53354A; /* Deep Plum background for project cards */
+    background-color: #222831; /* Dark Charcoal background for project cards */
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-    color: #E94560; /* Coral for card titles */
+    color: #00ADB5; /* Cyan for card titles */
 }
 
 .card-text a {
-    color: #E94560; /* Coral for project links */
+    color: #00ADB5; /* Cyan for project links */
 }
 
 .card-text a:hover {
-    color: #FFFFFF; /* White hover effect for project links */
+    color: #EEEEEE; /* Light Gray hover effect for project links */
 }
 
 /* Contact Section */
 #contact {
-    background-color: #16213E; /* Darker Navy for contact section */
-    color: #FFFFFF;
+    background-color: #393E46; /* Slate Gray for contact section */
+    color: #EEEEEE;
+}
+
+#contact h2 {
+    color: #00ADB5; /* Cyan for section title */
 }
 
 #contact a {
-    color: #E94560; /* Coral for contact links */
+    color: #00ADB5; /* Cyan for contact links */
 }
 
 #contact a:hover {
-    color: #FFFFFF; /* White hover effect */
+    color: #EEEEEE; /* Light Gray hover effect */
 }
 
 /* Footer */
 footer {
-    background-color: #0F3460; /* Muted Dark Blue for the footer */
-    color: #FFFFFF;
+    background-color: #393E46; /* Slate Gray for the footer */
+    color: #EEEEEE;
 }
 
 /* Buttons and Links */
 .btn-primary {
-    background-color: #E94560; /* Coral for buttons */
+    background-color: #00ADB5; /* Cyan for buttons */
     border: none;
-    color: white;
+    color: #222831; /* Dark Charcoal for button text */
 }
 
 .btn-primary:hover {
-    background-color: #16213E; /* Darker navy for button hover */
+    background-color: #222831; /* Dark Charcoal for button hover */
+    color: #EEEEEE; /* Light Gray hover effect */
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
+}
+
+.toggle-switch input {
+    display: none; /* Hide the checkbox */
+}
+
+.toggle-switch .switch {
+    width: 50px; /* Switch width */
+    height: 24px; /* Switch height */
+    background-color: #222831; /* Dark mode background (default) */
+    border-radius: 50px; /* Rounded corners */
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    position: relative; /* Position for the circle */
+}
+
+/* Position the toggle circle for dark mode */
+.toggle-switch .switch:before {
+    content: '';
+    width: 22px; /* Circle width */
+    height: 22px; /* Circle height */
+    background-color: #00ADB5; /* Circle color */
+    border-radius: 50%; /* Make it round */
+    position: absolute;
+    right: 1px; /* Start circle on the right (dark mode) */
+    bottom: 1px; /* Position inside the switch */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add icons */
+.toggle-switch .switch:after {
+    content: '\f186'; /* Moon icon for dark mode */
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px; /* Icon size */
+    color: #EEEEEE; /* Light gray icon color */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 5px; /* Position the icon */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* When light mode is active */
+#mode-toggle:checked + .switch {
+    background-color: #D3D3D3; /* Light mode background */
+}
+
+#mode-toggle:checked + .switch:before {
+    transform: translateX(-26px); /* Move circle to the left for light mode */
+}
+
+#mode-toggle:checked + .switch:after {
+    content: '\f0eb'; /* Sun icon for light mode */
+    color: #222831; /* Dark icon color */
+    top: 50%; /* Center vertically */
+    left: 34px; /* Position the sun icon */
+}
+
+/* Optional: Add hover effects */
+.toggle-switch .switch:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #FFFFFF; /* Light background */
+    color: #222831; /* Dark text color */
+}
+
+.light-mode .navbar,
+.light-mode footer,
+.light-mode #about,
+.light-mode #skills,
+.light-mode #projects,
+.light-mode #contact {
+    background-color: #EEEEEE; /* Light sections */
+    color: #222831; /* Dark text */
+}
+
+.light-mode .card {
+    background-color: #FFFFFF; /* White cards */
+    color: #222831; /* Dark text on cards */
+}
+
+.light-mode .navbar-brand,
+.light-mode .nav-link {
+    color: #222831; /* Dark links */
+}
+
+.light-mode .nav-link:hover {
+    color: #00ADB5; /* Cyan hover effect for light mode */
+}
+
+/* Optional: If you have specific elements that need color adjustments */
+.light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode p {
+    color: #222831; /* Set text color in light mode */
+}
+
+/* Light Mode Contact Links */
+.light-mode #contact a {
+    color: #00ADB5; /* Cyan color for contact links in light mode */
+}
+
+.light-mode #contact a:hover {
+    color: #222831 !important; /* Dark hover effect for contact links in light mode with higher specificity */
+}
+
+/* General Button Styles */
+button {
+    background-color: #00ADB5; /* Button color */
+    color: #FFFFFF; /* Text color for dark mode */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Light Mode Button Styles */
+body.light-mode button {
+    background-color: #393E46; /* Darker button background for light mode */
+    color: #FFFFFF; /* White text color for light mode */
+}
+
+/* Skills Section Text */
+.skills-section {
+    color: #EEEEEE; /* Default text color for dark mode */
+}
+
+/* Light Mode Skills Section Text */
+body.light-mode .skills-section {
+    color: #222831; /* Dark text color for light mode */
+}
+
+/* General Link Styling */
+a {
+    color: #00ADB5; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Link Hover State in Dark Mode */
+a:hover {
+    color: #EEEEEE; /* Light gray on hover in dark mode */
+}
+
+/* Light Mode Link Styling */
+body.light-mode a {
+    color: #00ADB5; /* Keep blue color for links in light mode */
+}
+
+/* Light Mode Link Hover State */
+body.light-mode a:hover {
+    color: #393E46; /* Darker gray for hover in light mode */
+}
+
+/* Light Mode Navbar Brand Hover State */
+body.light-mode .navbar-brand:hover {
+    color: #00ADB5; /* Cyan for hover in light mode */
+}
+
+/* Light Mode Contact Links Hover State */
+body.light-mode #contact a:hover {
+    color: #393E46; /* Darker gray for hover in light mode */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #FFFFFF; /* White background for light mode */
+    color: #222831; /* Dark text color for light mode */
+}
+
+body.light-mode h1, body.light-mode h2, body.light-mode h3 {
+    color: #222831; /* Dark color for headings in light mode */
+}
+
+body.light-mode p, body.light-mode li {
+    color: #222831; /* Dark color for paragraphs and list items in light mode */
+}
+
+/* Light Mode Navbar Links */
+body.light-mode .navbar-nav .nav-link {
+    color: #222831; /* Dark color for navbar links in light mode */
+}
+
+body.light-mode .navbar-nav .nav-link:hover {
+    color: #00ADB5; /* Cyan hover effect for navbar links in light mode */
+}
+
+/* Light Mode Skills Section */
+body.light-mode #skills {
+    background-color: #F8F9FA; /* Light background for skills section in light mode */
+    color: #222831; /* Dark text color for skills section in light mode */
+}
+
+body.light-mode #skills .list-unstyled li {
+    color: #222831; /* Dark color for list items in skills section in light mode */
+}
+
+body.light-mode #contact a:hover {
+    color: #00ADB5; /* Cyan hover effect for contact links in light mode */
 }
